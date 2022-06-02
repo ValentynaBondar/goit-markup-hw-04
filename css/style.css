@@ -61,7 +61,7 @@ h2,
 h3{ 
     font-family: Roboto;
     color: #212121;
-    color: #ffffff;
+   
 }
  
  ul{
@@ -74,11 +74,13 @@ h3{
 }
 .main-nav {
     display: flex;
-    align-items: center; 
-   
-    
+    align-items: center;   
 }
-
+.logo-top{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .logo-web{
      color: var(--accent-color);
@@ -99,21 +101,17 @@ h3{
         line-height: 1.19;
       
 }
-.logo-heder{
-    margin-right: 93px;
-   
 
-    
-}
  /* site-nav */
  .site-nav {
      display: flex;
  }
- .site-nav .item{
+ .site-nav .item-one{
      
      margin-right: 50px;
  }
- .site-nav .item:last-child{
+
+ .site-nav .item-one:last-child{
      margin-right: 0;
  }
  .site-nav .link {
@@ -132,6 +130,9 @@ h3{
  .site-nav .link:hover,
  .site-nav .link:focus {
      color: var(--accent-color);
+ }
+ .item-one .link.studio{
+     color: #2196F3;
  }
 
  .auth-nav {
@@ -167,7 +168,7 @@ h3{
 
 
 
- .auth-nav .item+ .item{
+ .auth-nav .item-one+ .item-one{
      margin-left: 50px;
      
 
@@ -256,7 +257,7 @@ h3{
  .button-primary:hover,
  .button-primary:focus{
       color:var(--title-text-color);
-    background-color: var(--color-color);
+    background-color: #F5F4FA;
 
  }
 
@@ -277,7 +278,7 @@ h3{
     display: flex;
     flex-wrap: nowrap;
 } 
- .content .item{
+ .content .item-choos{
       
     min-width: 270px;
     min-height: 101px;
@@ -295,6 +296,10 @@ h3{
     border-radius: 4px;
    
 
+ }
+ .item-title-paragraph-icon{
+     max-width: 70px ;
+     max-height: 70px;
  }
      
   
@@ -563,122 +568,107 @@ fill:var(--accent-color) ;
 
 /*как найти нас (footer)*/
 
-.footer{
-    background-color:var(--background-color);
+
+
+.footer {
+    background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    
-   
-    
-}
-.logo{
-    
-    margin-bottom: 20px;
-    margin-right: 200px;
-
-}
-.together{
-    display: flex;
-    align-items: center; 
-}
-
-
-.together .row-colump-text{
-color: var(--color-color);
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-}
-
-.logo-footer{
+  }
+  
+  .logo-footer {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     color: var(--color-color);
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.9;
-}
-
-.addrees-row-colump{
-    margin-right: 70px;
-}
-.word{
-    margin-bottom:20px;
-    padding-top: 60px;
-    
-}
-.address-link a{
-    color: var(--color-color);
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.7;
-     letter-spacing: 0.03em;    
-}
-.map{
-    color: var(--color-color);
-    font-family: 'Roboto';
+  }
+  
+  .footer-list {
+    margin-top: 20px;
+  }
+  
+  .footer-list:not(:first-child) {
+    margin-top: 9px;
+  }
+  .contact-footer:hover,
+  .contact-footer:focus{
+      
+      color: var(--accent-color);
+  }
+  
+  .map {
     font-style: normal;
-    font-weight: 400; 
-    }
-.map:hover,
-.map:focus{
-    color:var(--accent-color);
- }
-
-.address-link{
     color: var(--color-color);
-    opacity: 0.6; 
-    margin-bottom: 9px;    
-    }
-
-.address-link:last-child{
-    margin-bottom: 0;
-    margin-top: 0;
-    }
- 
-.address-link a:hover,
-.address-link a:focus{
-        color:var(--accent-color);
-    }
-.address-row{
-        display: flex;
-    }
-
-.address-row-colump-item{
-        width: 44px;
-        height: 44px;
-        margin-right: 10px;
-    }  
-.address-row-colump-text.list {
+  }
+  .map:hover,
+  .map:focus{
+      
+      color: var(--accent-color);
+  }
+  
+  .contact-footer {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .footer-container {
     display: flex;
-
-}
-.address-row-colump-text{
-    margin-top: 0;
-}
-  .address-row-colump-item:last-child{
-      margin-right: 0;
+    align-items: baseline;
   }
-  .address-row-colump-text-link{
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      display: flex;  
-      align-items: center;
-      justify-content: center;
+  
+  .footer-address-container {
+    margin-right: 70px;
   }
-  .address-row-colump-icon{
-      fill: var(--color-color);
+  
+  .footer-social-container {
+    display: inline-block;
   }
-  .address-row-colump-text-link:hover,
-  .address-row-colump-text-link:focus{
-      background-color: var(--accent-color);
+  
+  .footer-social-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-item {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .footer-social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    fill: var(--color-color);
+    background-color: var(--accent-color);
+  }
+  
+  .footer-social-icon {
+    fill: var(--color-color);
   }
 
  /*СТРАНИЦА ПОРТФОЛИО*/
@@ -738,21 +728,47 @@ text-transform: uppercase;
     color: var(--color-color);
     background-color: var(--accent-color);
 } 
+.button-item.blue{
+    background-color:var(--accent-color);
+    color: var(--color-color);
+
+}
  
      
 /*наши продукты*/ 
+
+.box-gallery{
+    display: flex;
+} 
+.item{
+    display: inline-block;
+   
+}
+.item:hover,
+.item:focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    1px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+    
+
 
 .gallery{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px;   
+    margin-top: -30px; 
+   
 }
 .gallery > .item{
  flex-basis: calc((100% - 90px)/3);
  margin-left: 30px;
  margin-top: 30px;
  border-bottom: 1px solid #EEEEEE;
+ 
+ 
  
 }
 
