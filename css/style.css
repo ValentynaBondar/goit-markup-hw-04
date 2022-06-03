@@ -488,6 +488,7 @@ background-color:var(--accent-color) ;
 /*постоянные клиенты*/
 .company-clients{
     padding-top: 94px;
+    padding-bottom: 94px;
     
 }
 .company-title{
@@ -528,6 +529,8 @@ margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 
@@ -546,12 +549,11 @@ fill:var(--accent-color) ;
 .company-link:hover ,
 .company-link:focus {
    border: 1px solid #2196F3; 
-   border-radius: 4px;
+  
 }
 .company-icon{
     fill: #afb1b8;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+    
 
     
     
@@ -727,6 +729,8 @@ fill:var(--accent-color) ;
 .button-item:focus{
     color: var(--color-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 
+    0px 2px 2px rgba(0, 0, 0, 0.15);
 } 
 .button-item.blue{
     background-color:var(--accent-color);
@@ -740,12 +744,12 @@ fill:var(--accent-color) ;
 .box-gallery{
     display: flex;
 } 
-.item{
+.gallery-link{
     display: inline-block;
    
 }
-.item:hover,
-.item:focus{
+.gallery-link:hover,
+.gallery-link:focus{
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12),
     1px 4px 4px rgba(0, 0, 0, 0.06),
