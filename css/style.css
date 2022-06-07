@@ -253,6 +253,7 @@ h3{
             padding: 10px 32px 10px 32px;
             min-width: 200px;
             border: 0px solid transparent;
+           
         }
  .button-primary:hover,
  .button-primary:focus{
@@ -508,10 +509,7 @@ margin-bottom: 50px;
 
 
 /*постоянные клиенты логотипы*/
-.company-title.list{
-    margin-bottom: 50px;
 
-}
 .company-title-item{
     width: 170px;
     height: 92px;
@@ -529,42 +527,35 @@ margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+    
+   
 }
-
-
-
 
 .company-link:hover,
-.company-link:focus{
-  
-fill:var(--accent-color) ;
+.company-link:focus{ 
+fill:var(--accent-color)
 }
+
 .company-link:hover .company-icon,
 .company-link:focus .company-icon{
+    border-color:var(--accent-color);
  fill: var(--accent-color); 
+ 
+}
 
-}
-.company-link:hover ,
-.company-link:focus {
-   border: 1px solid #2196F3; 
-  
-}
+
+
 .company-icon{
-    fill: #afb1b8;
-    
-
-    
-    
+    fill: #afb1b8;  
+    border: 1px solid #afb1b8; 
+    border-radius: 4px;
 }
 
 
 .company-title{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 
@@ -594,9 +585,9 @@ fill:var(--accent-color) ;
   .footer-list:not(:first-child) {
     margin-top: 9px;
   }
+
   .contact-footer:hover,
-  .contact-footer:focus{
-      
+  .contact-footer:focus{   
       color: var(--accent-color);
   }
   
@@ -604,9 +595,9 @@ fill:var(--accent-color) ;
     font-style: normal;
     color: var(--color-color);
   }
+
   .map:hover,
-  .map:focus{
-      
+  .map:focus{  
       color: var(--accent-color);
   }
   
@@ -693,24 +684,23 @@ fill:var(--accent-color) ;
      padding-top: 94px;
      padding-bottom: 94px;
  }
+
  .button-project{
      display: flex;
      justify-content:center;
-     margin-bottom: 50px;
-    
-    
-      
+     margin-bottom: 50px;     
  }
+
 .list{
     margin-right: 8px;
 }
+
 .list:last-child {
     margin-right: 0;
   } 
 
 
 .button-item{ 
-   
     cursor: pointer;
     color: var(--title-text-color);
     background-color: #EEEEEE;
@@ -722,6 +712,8 @@ fill:var(--accent-color) ;
     line-height: 1.6;
 
     padding: 6px 22px 6px 22px;
+
+  
    
      }
  
@@ -731,6 +723,7 @@ fill:var(--accent-color) ;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 
     0px 2px 2px rgba(0, 0, 0, 0.15);
+
 } 
 .button-item.blue{
     background-color:var(--accent-color);
@@ -744,10 +737,11 @@ fill:var(--accent-color) ;
 .box-gallery{
     display: flex;
 } 
+
 .gallery-link{
     display: inline-block;
-   
 }
+
 .gallery-link:hover,
 .gallery-link:focus{
     box-shadow: 
@@ -756,25 +750,20 @@ fill:var(--accent-color) ;
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-    
-
-
 .gallery{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -30px; 
-   
+    margin-top: -30px;    
 }
+
 .gallery > .item{
  flex-basis: calc((100% - 90px)/3);
  margin-left: 30px;
  margin-top: 30px;
  border-bottom: 1px solid #EEEEEE;
- 
- 
- 
 }
+
 
 .gallery:nth-child(n+7)
 {
@@ -782,14 +771,11 @@ fill:var(--accent-color) ;
 }
 
 .help{
-
     padding: 20px 24px 20px 24px;
      
 }
 
-
-
-   
+  
 .text {
     color: var(--title-text-color);
         font-weight: 700;
@@ -808,6 +794,7 @@ fill:var(--accent-color) ;
         
 
 }
+
 
     
 
